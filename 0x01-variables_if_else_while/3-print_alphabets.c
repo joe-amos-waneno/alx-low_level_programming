@@ -7,11 +7,11 @@
 int main(void)
 {
 	char alphabet;
-	
+
 	char capital;
 
-	capital = 'A';
 	alphabet = 'a';
+	capital = 'A';
 	while (alphabet <= 'z')
 	{
 		putchar(alphabet);
@@ -24,5 +24,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }
