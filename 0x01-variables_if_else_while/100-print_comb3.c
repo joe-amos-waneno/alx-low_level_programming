@@ -12,9 +12,9 @@ int main(void)
 
 	num1 = '0';
 	num2 = '0';
-	while (num1 < '10')
+	while (num1 <= '9')
 	{
-		while (num2 < '10')
+		while (num2 <= '9')
 		{
 			if (!(num1 > num2) || num1 == num2)
 			{
