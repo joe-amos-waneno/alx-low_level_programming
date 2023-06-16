@@ -9,7 +9,7 @@ int main(void)
 	char alphabet;
 	
 	char capital;
-	
+
 	capital = 'A';
 	alphabet = 'a';
 	while (alphabet <= 'z')
