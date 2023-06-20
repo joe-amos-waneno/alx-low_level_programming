@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * alphabet - Entry point
+ * print_alphabet - Entry point
  *
  * Return: void
  */
-void alphabet(void)
+void print_alphabet(void)
 {
 	char alpha;
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
