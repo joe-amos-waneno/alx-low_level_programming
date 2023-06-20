@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * add - Entry point
- * @num1: First value 
+ * @num1: First value
  * @num2: second value
  * Return: int
  */
