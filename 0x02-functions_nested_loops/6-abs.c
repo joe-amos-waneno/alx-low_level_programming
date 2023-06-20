@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - Entry point
- * @c: Computing Int
+ * @num: Computing Int
  * Return: Absolute value or zero
  */
 int _abs(int num)
