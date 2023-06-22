@@ -2,7 +2,7 @@
 /**
  * _isupper - Entry point
  * @c: variable
- * Return: 0
+ * Return: 1 if is upper else 0
  */
 int _isupper(int c)
 {
