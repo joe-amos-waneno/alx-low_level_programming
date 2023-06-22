@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isupper - Entry point
- * @c: variable
- * Return: 1 if is upper else 0
- */
+* _isupper - Entry point
+* @c: Variable
+* Return: Always 0.
+*/
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
@@ -12,6 +12,6 @@ int _isupper(int c)
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
