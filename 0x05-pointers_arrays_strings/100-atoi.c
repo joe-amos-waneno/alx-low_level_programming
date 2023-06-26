@@ -21,7 +21,7 @@ int _atoi(char *s)
 	while (x < length && a == 0)
 	{
 		if (s[x] == '-')
-			++d;
+			++y;
 		if (s[x] >= '0' && s[x] <= '9')
 		{
 			num = s[x] - '0';
@@ -37,5 +37,5 @@ int _atoi(char *s)
 	}
 	if (a == 0)
 		return (0);
-	return (n);
+	return (z);
 }
