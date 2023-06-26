@@ -4,7 +4,7 @@
  * @str: input
  * Return: print
  */
-void puts2(chae *str)
+void puts2(char *str)
 {
 	int length = 0;
 	int x = 0;
