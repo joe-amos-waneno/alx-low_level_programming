@@ -4,8 +4,7 @@
  * @n: first num
  * @m: second num
  * Return: 0 always
- */
- 
+ */ 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int x, q = 0;
