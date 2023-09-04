@@ -7,7 +7,7 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int gt, rs, len = 0;
+	int led, gts, len = 0;
 
 	if (filename == NULL)
 		return (-1);
@@ -18,14 +18,13 @@ int append_text_to_file(const char *filename, char *text_content)
 			len++;
 	}
 
-	gt = open(filename, O_WRONLY | O_APPEND);
-	
-	rs = write(gt, text_content, len);
+	led = open(filename, O_WRONLY | O_APPEND);
+	gts = write(led, text_content, len);
 
-	if (gt == -1 || rs == -1)
+	if (led == -1 || gts == -1)
 		return (-1);
 
-	
-	close(gt);
+	close(led);
+
 	return (1);
 }
