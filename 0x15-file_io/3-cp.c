@@ -1,9 +1,10 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void close_file(int fd);
 char *create_buffer(char *file);
+void close_file(int fd);
+
 /**
  * create_buffer - Entry point
  * @file: File Name
@@ -30,11 +31,11 @@ char *create_buffer(char *file)
  */
 void close_file(int fd)
 {
-	int gdp;
+	int sp;
 
-	gdp = close(fd);
+	sp = close(fd);
 
-	if (gdp == -1)
+	if (sp == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
@@ -73,7 +74,6 @@ int main(int argc, char *argv[])
 		}
 
 		w = write(to, bffr, r);
-		
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -83,7 +83,6 @@ int main(int argc, char *argv[])
 		}
 
 		r = read(from, bffr, 1024);
-		
 		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
@@ -93,5 +92,4 @@ int main(int argc, char *argv[])
 	close_file(to);
 
 	return (0);
-	
 }
