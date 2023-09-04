@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * read_textfile- Entry point
+ * read_textfile - Entry point
  * @filename: text
  * @letters: number of letters
  * Return: 0 always
