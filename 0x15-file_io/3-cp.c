@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 void close_file(int fd);
-
 char *create_buffer(char *file);
 /**
  * create_buffer - Entry point
@@ -22,6 +21,7 @@ char *create_buffer(char *file)
 			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
+
 	return (bffr);
 }
 /**
@@ -39,7 +39,6 @@ void close_file(int fd)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	
 }
 
 /**
@@ -51,7 +50,6 @@ void close_file(int fd)
 int main(int argc, char *argv[])
 {
 	int from, to, r, w;
-	
 	char *bffr;
 
 	if (argc != 3)
@@ -61,11 +59,8 @@ int main(int argc, char *argv[])
 	}
 
 	bffr = create_buffer(argv[2]);
-	
 	from = open(argv[1], O_RDONLY);
-	
 	r = read(from, bffr, 1024);
-	
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
@@ -94,9 +89,7 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 
 	free(bffr);
-	
 	close_file(from);
-	
 	close_file(to);
 
 	return (0);
