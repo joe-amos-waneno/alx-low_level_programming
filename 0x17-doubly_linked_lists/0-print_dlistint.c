@@ -2,6 +2,7 @@
 
 /**
  * print_dlistint - Entry point
+ * @h: list header
  * Return: 0 always
  */
 size_t print_dlistint(const dlistint_t *h)
